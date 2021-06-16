@@ -1,0 +1,157 @@
+body{
+	margin: 0;
+	font-family: Arial;
+	color:white;
+}
+header{
+	background-color: hsl(203, 16%, 25%);
+	padding: 1% 10%;
+	border-bottom: 4px solid #E8491D;
+}
+.top-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.brand{
+	color:#E8491D;
+}
+.links{
+	display: flex;
+	width:30%;
+	justify-content: space-between;
+}
+a{
+	text-decoration: none;
+	color:white;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+.home{
+	color: #E8491D;
+}
+.mid-container{
+	background-image: url("https://jolly-kalam-23776e.netlify.app/corps/img/showcase.jpg");
+	padding:3% 10%;
+	background-position: center;
+	text-align:center;
+	height: 40vh;
+}
+.text1{
+	font-size:45px;
+	font-weight: bold;
+}
+.text2{
+	font-size: 20px;
+}
+.news-letter{
+	padding:1% 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.top-news-letter{
+	background-color: hsl(203, 16%, 25%);
+}
+.sub{
+	font-size: 20px;
+	font-weight: bold;
+}
+.form-element{
+	height: 30px;
+}
+input{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+button{
+	background-color: #E8491D;
+	border:0;
+	color:white;
+}
+.technologies{
+	color:#000;
+	display: flex;
+	padding: 20px 50px 10px;
+	justify-content: center;
+}
+.tech{
+	margin:15px;
+	text-align: center;
+	width:25%;
+}
+.image{
+	width: 100px;
+}
+.footer{
+	text-align: center;
+	padding:30px;
+	background-color: #E44D26;
+}
+
+@media (max-width:960px){
+
+	.link-item{
+		margin-left:30px;
+	}
+	.header{
+		padding:1% 7%;
+	}
+}
+@media (max-width:780px){
+
+	.top-container{
+		flex-direction: column;
+		align-items:center;
+	}
+	.links{
+		width:60%;
+	}
+	.sub{
+		font-size: 18px;
+	}
+	.tech{
+		width: 30%;
+	}
+}
+@media (max-width:680px){
+	.links{
+		flex-direction: column;
+		align-items: center;
+		margin-bottom:10px;
+	}
+	.link-item{
+		margin: 0;
+		margin-top: 10px;
+	}
+	.sub{
+		font-size: 16px;
+	}
+	.text1{
+		font-size: 30px;
+	}
+	.mid-container{
+		height: 30vh
+	}
+	.text2{
+		font-size: 16px;
+	}
+	.news-letter{
+		flex-direction: column;
+		align-items:center;
+	}
+	.technologies{
+		flex-direction: column;
+		align-items: center;
+	}
+	.tech{
+		width:90%;
+	}
+	.footer{
+		font-size: 13px
+	}
+	form{
+		padding-bottom: 10px;
+	}
+}
